@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Keyboard Shortcuts Helper",
+  "version": "1.0.0",
+  "description": "Search useful Windows keyboard shortcuts for editing, browser navigation, screenshots, and productivity.",
+  "action": {
+    "default_title": "Keyboard Shortcuts Helper",
+    "default_popup": "popup.html"
+  }
+}

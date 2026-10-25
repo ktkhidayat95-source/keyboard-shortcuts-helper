@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keyboard Shortcuts Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo" aria-hidden="true">⌨</div>
+    <div class="brand">
+      <h1>Keyboard Shortcuts</h1>
+      <p>Quick help by KeyboardGuides</p>
+    </div>
+  </header>
+
+  <label class="search-wrap">
+    <span aria-hidden="true">⌕</span>
+    <input id="search" type="search" placeholder="Search shortcuts..." autocomplete="off" autofocus>
+  </label>
+
+  <nav id="categories" class="categories" aria-label="Shortcut categories">
+    <button class="category active" data-category="All">All</button>
+    <button class="category" data-category="Editing">Editing</button>
+    <button class="category" data-category="Browser">Browser</button>
+    <button class="category" data-category="Screenshots">Screenshots</button>
+    <button class="category" data-category="Productivity">Productivity</button>
+  </nav>
+
+  <main>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <section id="shortcut-list" class="shortcut-list"></section>
+    <p id="empty" class="empty" hidden>No shortcuts found. Try another search.</p>
+  </main>
+
+  <footer>
+    <span>Windows shortcuts</span>
+    <a href="https://keyboardguides.com/" target="_blank" rel="noopener noreferrer">More keyboard guides ↗</a>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>
